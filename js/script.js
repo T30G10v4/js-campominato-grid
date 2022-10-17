@@ -26,11 +26,12 @@ goButton.addEventListener("click", function() {
 
 });
 
-
-
-
-
-
+/**
+ * Description Funzione che costruisce la griglia di numeri
+ * @param {any} HTMLElement , Elemento HTML all'interno del quale deve essere costruita la griglia
+ * @param {number} squaresNumber , Numero di elementi in una riga (10, 9, 7)
+ * @returns {void}
+ */
 function makeGrid (HTMLElement, squaresNumber) {
 
     squaresIterations = squaresNumber * squaresNumber;
@@ -47,11 +48,9 @@ function makeGrid (HTMLElement, squaresNumber) {
     
             this.classList.add("bg-azure");
             
-    
         });
     
         HTMLElement.append(square);
 
     }
 }
-
